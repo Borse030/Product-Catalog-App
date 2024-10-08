@@ -190,7 +190,7 @@ const Product_Details = () => {
             {filteredProducts.map(product => (
              
                 <div className="product-card">
-                <Link to={`/Single_Product/${product.id}`} key={product.id}>
+                <Link to={`/SingleProduct/${product.id}`} key={product.id}>
                   <img
                     src={product.image}
                     alt={product.title}
