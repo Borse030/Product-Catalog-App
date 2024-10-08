@@ -1,0 +1,86 @@
+.dropdown {
+  margin-right: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+.dropdown:focus {
+  outline: none;
+}
+
+
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px; /* Increased gap between cards */
+    padding: 20px;
+    margin: 0 auto;
+  }
+  
+  .product-image {
+    max-width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .product-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .product-price {
+    color: #333;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+  
+  .product-category {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .add-to-cart {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: auto; /* Ensures button stays at the bottom */
+  }
+  
+  .add-to-cart:hover {
+    background-color: #0056b3;
+  }
+  
+
+  /* Add this for the description style */
+.product-description {
+  font-size: 0.85em;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Add this for the hover effect */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
+
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* On hover, the card grows in size */
+.product-card:hover {
+  transform: scale(1.05); /* Scales the card to 105% of its original size */
+}
